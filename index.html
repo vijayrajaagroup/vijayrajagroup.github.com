@@ -3,180 +3,73 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vijay Raja Group | Apartments for Sale</title>
-  <!-- Bootstrap CSS -->
+  <title>Vijay Raja Group - Premium Apartments</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
-    .hero {
+    .video-background {
       position: relative;
-      height: 600px;
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
+      overflow: hidden;
+      height: 100vh;
     }
-    .hero video {
+    .video-background video {
       position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      z-index: -1;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: 0;
+      transform: translate(-50%, -50%);
     }
-    .hero h1 {
-      font-size: 3rem;
-      text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+    .content-overlay {
+      position: relative;
+      z-index: 1;
+      padding: 2rem;
+      color: #fff;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
     }
-    .section-padding {
-      padding: 60px 0;
-    }
-    .card-img-top {
-      height: 200px;
-      object-fit: cover;
-    }
-    .navbar-brand img {
-      height: 40px;
+    header.navbar {
+      background-color: #ffffff !important;
     }
   </style>
 </head>
 <body>
-
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg" style="background-color: #ffffff;">
+  <header class="navbar navbar-expand-lg navbar-light fixed-top">
     <div class="container">
       <a class="navbar-brand" href="#">
-        <img src="https://vijayrajagroup.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FcolorLogo.9ce94573.webp&w=640&q=75" alt="Vijay Raja Group Logo">
+        <img src="https://vijayrajagroup.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FcolorLogo.9ce94573.webp&w=640&q=75" alt="Vijay Raja Group" height="50">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
           <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
     </div>
-  </nav>
+  </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <video autoplay muted loop>
+  <section class="video-background">
+    <video autoplay muted loop playsinline>
       <source src="https://s3-ap-south-1.amazonaws.com/vijayraja-marketing/Vijay%20Raja%20VRX%20Magna%20-%20Walkthrough.mp4" type="video/mp4">
     </video>
-    <div class="container">
-      <h1>Elevate Your Living – Premium Apartments by Vijay Raja</h1>
-    </div>
-  </section>
-
-  <!-- Video Bottom Content Section -->
-  <section class="section-padding bg-light text-center">
-    <div class="container">
-      <h1 class="mb-4">Experience Modern Living with Purposefully Designed Apartments</h1>
-      <p class="mb-4">Apartments today are more than just places to live—they're thoughtfully planned spaces that offer both function and lifestyle. Designed with contemporary needs in mind, they blend privacy and community, personal space and shared amenities. From spacious layouts to stylish interiors, every detail is built to enhance daily life. Whether you're a working professional, a growing family, or someone seeking a tranquil space to unwind, a well-designed apartment can meet your needs with ease. With access to essential facilities, green areas, and smart infrastructure, apartment living provides a balanced, enriching experience. If you're looking for <strong>Apartments for Sale in Poonamallee</strong>, you'll find options that deliver comfort and connectivity. <a href="https://vijayrajagroup.com/blog/finding-the-perfect-flat-in-poonamallee" target="_blank">Learn more about finding your ideal home in Poonamallee</a> and embrace the future of urban living.</p>
-      <a href="https://vijayrajagroup.com/project-detail/vrx-magna-apartment-for-sale-in-thirumazhisai" class="btn btn-primary btn-lg">Explore More</a>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="section-padding">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <img src="https://via.placeholder.com/500x300" class="img-fluid" alt="Apartments">
-        </div>
-        <div class="col-md-6">
-          <h2>About Vijay Raja Group</h2>
-          <p>We are committed to offering thoughtfully designed apartments in key locations across Chennai. Our goal is to provide comfortable, smart living spaces that meet the needs of modern homebuyers.</p>
-        </div>
+    <div class="content-overlay text-center">
+      <div class="container">
+        <h1 class="display-5">Discover Modern Living with Vijay Raja Group</h1>
+        <p class="mt-4 fs-5">
+          Vijay Raja Group brings a new dimension to contemporary urban living with thoughtfully designed apartments that combine convenience, style, and quality. With a strong focus on functional layouts and prime locations, every residential project by Vijay Raja Group reflects a commitment to superior living experiences. Whether you’re starting a family or looking to invest, these homes provide more than just space—they provide lifestyle. Explore <a href="https://vijayrajagroup.com/blog/finding-the-perfect-flat-in-poonamallee" class="text-white text-decoration-underline">Apartments for Sale in Poonamallee</a> that are tailored for comfort and elegance.
+        </p>
+        <a href="https://vijayrajagroup.com/project-detail/vrx-magna-apartment-for-sale-in-thirumazhisai" class="btn btn-primary btn-lg mt-3">Explore More</a>
       </div>
     </div>
   </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="bg-light section-padding">
-    <div class="container">
-      <div class="text-center mb-5">
-        <h2>Our Projects</h2>
-        <p>Explore our ongoing and completed apartment projects.</p>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card">
-            <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Project 1">
-            <div class="card-body">
-              <h5 class="card-title">Green Vista</h5>
-              <p class="card-text">1 & 2 BHK apartments in Poonamallee with great amenities and connectivity.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Project 2">
-            <div class="card-body">
-              <h5 class="card-title">Urban Heights</h5>
-              <p class="card-text">Premium apartments with modern architecture in the heart of Chennai.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Project 3">
-            <div class="card-body">
-              <h5 class="card-title">Lakeview Residency</h5>
-              <p class="card-text">Enjoy peaceful living near nature with excellent features and value.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <!-- Add remaining sections like About, Projects, Contact -->
 
-  <!-- Contact Section -->
-  <section id="contact" class="section-padding">
-    <div class="container">
-      <div class="text-center mb-5">
-        <h2>Contact Us</h2>
-        <p>Interested in a site visit or want more details? Reach out to us!</p>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <form>
-            <div class="mb-3">
-              <label for="name" class="form-label">Name</label>
-              <input type="text" class="form-control" id="name" placeholder="Your Name">
-            </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email" placeholder="Your Email">
-            </div>
-            <div class="mb-3">
-              <label for="message" class="form-label">Message</label>
-              <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Send Message</button>
-          </form>
-        </div>
-        <div class="col-md-6">
-          <h5>Office Address</h5>
-          <p>No. 123, Main Road, Poonamallee, Chennai - 600056</p>
-          <p><strong>Email:</strong> info@vijayrajagroup.com</p>
-          <p><strong>Phone:</strong> +91-98765-43210</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-3">
-    <p>&copy; 2025 Vijay Raja Group. All Rights Reserved.</p>
-  </footer>
-
-  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
