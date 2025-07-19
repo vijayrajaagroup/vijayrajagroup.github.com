@@ -8,16 +8,26 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     .hero {
-      background: url('https://via.placeholder.com/1920x600?text=Apartments+in+Chennai') no-repeat center center;
-      background-size: cover;
+      position: relative;
       height: 600px;
+      color: white;
       display: flex;
       align-items: center;
-      color: white;
-      text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+      justify-content: center;
+      text-align: center;
+    }
+    .hero video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
     }
     .hero h1 {
-      font-size: 4rem;
+      font-size: 3rem;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
     }
     .section-padding {
       padding: 60px 0;
@@ -34,7 +44,7 @@
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg" style="background-color: #ffffff;">
     <div class="container">
       <a class="navbar-brand" href="#">
         <img src="https://vijayrajagroup.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FcolorLogo.9ce94573.webp&w=640&q=75" alt="Vijay Raja Group Logo">
@@ -54,11 +64,24 @@
   </nav>
 
   <!-- Hero Section -->
-  <section class="hero text-center">
+  <section class="hero">
+    <video autoplay muted loop>
+      <source src="https://s3-ap-south-1.amazonaws.com/vijayraja-marketing/Vijay%20Raja%20VRX%20Magna%20-%20Walkthrough.mp4" type="video/mp4">
+    </video>
     <div class="container">
-      <h1>Modern Apartments for Sale in Chennai</h1>
-      <p class="lead">Find your perfect 1 & 2 BHK apartment today with Vijay Raja Group.</p>
-      <a href="#projects" class="btn btn-primary btn-lg">Explore Projects</a>
+      <h1>Elevate Your Living – Premium Apartments by Vijay Raja</h1>
+      <a href="https://vijayrajagroup.com/project-detail/vrx-magna-apartment-for-sale-in-thirumazhisai" class="btn btn-primary btn-lg">Explore Projects</a>
+    </div>
+  </section>
+
+  <!-- Home Content Section -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h2>Discover Modern Living in Poonamallee</h2>
+        <p>Looking for <strong>Apartments for Sale in Poonamallee</strong>? Vijay Raja Group offers a perfect blend of connectivity, comfort, and community. Our thoughtfully designed homes ensure you and your family enjoy the best of what modern apartment living has to offer. 
+        <a href="https://vijayrajagroup.com/blog/finding-the-perfect-flat-in-poonamallee" target="_blank">Read more about finding your ideal flat in Poonamallee.</a></p>
+      </div>
     </div>
   </section>
 
